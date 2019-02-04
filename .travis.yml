@@ -10,3 +10,7 @@ script:
 
 after_success:
   - mvn tomcat7:deploy -Pdeployremote
+  
+
+notifications:
+ on_failure: always
